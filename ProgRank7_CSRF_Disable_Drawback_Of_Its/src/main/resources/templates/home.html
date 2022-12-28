@@ -1,0 +1,15 @@
+<html  xmlns="http://www.thymeleaf.com">
+<head></head>
+ <body>
+  <h1>Home Welcome</h1>
+  
+  <form action="/savedata" method="post">
+   <input name="uname"/><br>
+   <!-- It is must to use thymleaf otherwise it will not use these th tags and not get token value -->
+   <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+   <input type="submit" value="SAVE DATA"/>
+  </form>
+  
+  
+ </body>
+</html>

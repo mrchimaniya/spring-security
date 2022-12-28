@@ -1,0 +1,18 @@
+server:
+  port: 9090
+      
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 19c0cc7bb0ee8e8df088
+            clientSecret: 238e3ac455c0690aa8eb560d011578f164e7cd96
+          google:
+            clientId: 982086135106-v6js5u7h4bl8c53tqoq37ol56aqc97ak.apps.googleusercontent.com
+            clientSecret: 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
+          facebook:
+            clientId: 888641732329989
+            clientSecret: 3eda1e1ba4138b5b55b190c6a2336fff
+            

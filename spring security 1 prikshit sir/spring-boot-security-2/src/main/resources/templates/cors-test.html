@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<script>
+
+	document.addEventListener('DOMContentLoaded', function() {
+		const http = new XMLHttpRequest();
+		const url='http://localhost:9090/hello';
+		http.open("POST", url);
+		//http.setRequestHeader("X-CSRF-TOKEN", document.getElementById("csrf").value)
+		http.send();
+		// Calls the endpoint using 127.0.0.1 as host to simulate the cross-origin call
+		http.onreadystatechange = (e) => {
+			document.getElementById("output").innerHTML = http.responseText;
+		}	
+		
+		   
+	}, false);
+	
+</script>
+</head>
+<body>
+	<h1> CORS Test!!!</h1>
+	<div id="output" th:name="output"></div>
+	<input id="csrf" type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+	
+</body>
+</html>
