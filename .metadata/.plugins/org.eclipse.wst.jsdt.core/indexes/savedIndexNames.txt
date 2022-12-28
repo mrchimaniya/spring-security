@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+E:\divergent\security\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2822997165.index
-270930573.index
-2458475284.index
-3851316098.index
-2790415610.index
-1920998558.index
